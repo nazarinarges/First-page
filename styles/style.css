@@ -1,5 +1,4 @@
 /* Normalize Css */
-
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -178,8 +177,8 @@ template {
 
 /* header */
 .header{
-    height: 140px;
     overflow: hidden;
+    align-self: flex-end;
 }
 .header-list{
     display: flex;
@@ -187,7 +186,6 @@ template {
     align-items: center;
     padding: 15px 0px;
     line-height: normal;
-    margin-bottom: 70px;
     overflow: hidden;
 }
 
@@ -219,11 +217,11 @@ template {
 }
 
 .login{
-    background-color: #3486ebfa;
+    background-color: #0c66d6fa;
     padding: 10px 30px;
     border-radius: 5px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .header-list-item ,.list-item{
@@ -236,6 +234,8 @@ template {
     margin: 10px 400px;
     font-family: arial,sans-serif;
     font-size: 14px;
+    position: relative;
+    width: 600px;
 }
 
 .google-img{
@@ -248,7 +248,7 @@ template {
     height: 40px;
     border-radius:25px;
     outline: none;
-    border:1px solid #beb8b8;
+    border:1px solid rgb(231, 231, 231);
     margin-top: 20px;
     padding-left: 50px;
 }
@@ -261,8 +261,8 @@ template {
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 290px;
-    left: 420px;
+    top: 138px;
+    left: 22px;
 
 }
 
@@ -270,14 +270,14 @@ template {
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 290px;
-    left: 1000px;
+    top: 138px;
+    left: 554px;
 }
 
 .main-button{
     display: flex;
-    justify-content: space-between;
-    margin: 0px 170px;
+    justify-content: space-evenly;
+    padding: 0px 100px;
 }
 
 .btn{
@@ -299,6 +299,7 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 /* footer */
@@ -324,4 +325,26 @@ body{
 footer{
     background-color:#f2efefbd;
     margin-top: auto;
+    width: 100%;
+}
+
+/* responsive */
+@media only screen and (max-width: 768px){
+    .container2{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 630px){
+    .search-main{
+        width:70%;
+    }
+    .svg-search2{
+        left: 503px;
+    }
+    .svg-search1{
+        left: 80px;
+    }
 }
