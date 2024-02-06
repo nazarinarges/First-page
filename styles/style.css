@@ -5,10 +5,6 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 
-body {
-    margin: 0;
-}
-
 main {
     display: block;
 }
@@ -195,9 +191,11 @@ template {
     overflow: hidden;
 }
 
-.hrader-list-item{
+.header-list-item{
     margin-right: 30px;
     text-decoration: none;
+    font-family: arial,sans-serif;
+    font-size: 14px;
 }
 .header-link,.footer-link{
     text-decoration: none;
@@ -221,14 +219,14 @@ template {
 }
 
 .login{
-    background-color: #40A2E3;
+    background-color: #3486ebfa;
     padding: 10px 30px;
     border-radius: 5px;
     text-decoration: none;
     color: black;
 }
 
-.hrader-list-item ,.list-item{
+.header-list-item ,.list-item{
     list-style: none;
 }
 
@@ -236,6 +234,8 @@ template {
 .container{
     text-align: center;
     margin: 10px 400px;
+    font-family: arial,sans-serif;
+    font-size: 14px;
 }
 
 .google-img{
@@ -295,6 +295,7 @@ template {
 }
 /* body */
 body{
+    margin: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -308,6 +309,8 @@ body{
     display: flex;
     /* text-align: center; */
     justify-content:space-between;
+    font-family: arial,sans-serif;
+    font-size: 14px;
 }
 
 .left-list,.right-list{
